@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  margin-right: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn--ghost {
+  border: 2px solid var(--clr-dark);
+}
+
+.btn--ghost:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+.btn--primary {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+.btn--primary:hover {
+  border: 2px solid var(--clr-dark);
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+}

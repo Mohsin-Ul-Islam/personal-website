@@ -1,0 +1,36 @@
+.hero {
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.hero__designation {
+  color: orange;
+}
+
+.hero__info {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: var(--clr-dark);
+}
+
+.hero__figure {
+  padding: 1rem;
+  background-color: var(--clr-white);
+  box-shadow: 2px 3px 24px 18px rgba(0,0,0,0.1);
+  transform: rotate(23deg) scale(0.9);
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.hero__figure:hover {
+  transform: rotate(0);
+}

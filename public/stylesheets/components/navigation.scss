@@ -1,0 +1,34 @@
+.nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav__list {
+  padding: 0 1.5rem 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list-item {
+  padding: 1rem 1.8rem;
+}
+
+.nav__link {
+  font-size: 1rem;
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav__link--active {
+  font-weight: bold;
+}
+
+.nav__link--active ~ .nav__link-item {
+  border-bottom: 2px solid var(--clr-dark);
+}

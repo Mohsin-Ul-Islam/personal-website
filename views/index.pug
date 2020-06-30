@@ -1,5 +1,76 @@
-extends layout
+extends components/layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.hero.container
+    article.hero__content
+      h1.hero__title Mohsin Ul Islam
+      strong.hero__designation Computer Scientist
+      p.hero__info='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      a(href="#").btn.btn--ghost Projects
+      a(href="#").btn.btn--primary Resume
+    figure.hero__figure
+      img(src='/images/hero_image.jpg').hero__image
+  
+  section.projects
+    div.projects__wrapper.container
+      article.projects__content
+        h2.projects__title My Projects
+        div.cards
+          div.card
+            div.card__content
+              h3.card__title Hikerr Website
+              datetime.card__date July, 2020
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://hikerr.co').btn.btn--ghost Visit Project
+              
+          div.card
+            div.card__content
+              h3.card__title Conway's game of life
+              datetime.card__date June, 2020
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://mohsin-ul-islam.github.io/').btn.btn--ghost Visit Project
+          
+          
+          div.card
+            div.card__content
+              h3.card__title LSCSE Website
+              datetime.card__date August, 2019
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
+              
+              
+          div.card
+            div.card__content
+              h3.card__title Chess game in C++
+              datetime.card__date August, 2019
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
+              
+              
+          div.card
+            div.card__content
+              h3.card__title Cake in Python
+              datetime.card__date August, 2019
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
+              
+          div.card
+            div.card__content
+              h3.card__title Digari Website
+              datetime.card__date August, 2019
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
+              
+          div.card
+            div.card__content
+              h3.card__title Snake game in C++
+              datetime.card__date August, 2019
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+              a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+:root {
+  --clr-white: #fafafa;
+  --clr-dark: #555;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:576px) {
+  .container { max-width: 570px; }
+}
+
+@media screen and (min-width:768px) {
+  .container { max-width: 760px; }
+}
+
+@media screen and (min-width:1024px) {
+  .container { max-width: 992px; }
+}
+
+@media screen and (min-width:1200px) {
+  .container { max-width: 1170px; }
+}
+
+@import "partials/normalize";
+@import "partials/animations";
+@import "components/navigation";
+@import "components/footer";
+@import "components/gadets";
+@import "sections/hero";
+@import "sections/projects";
+@import "components/buttons";
