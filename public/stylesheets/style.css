@@ -192,6 +192,9 @@ ul.social__list--footer {
 .social__list--footer .social__link:hover {
   color: var(--clr-white); }
 
+.footer__email {
+  color: var(--clr-white); }
+
 .love-icon, .coffee-icon {
   margin: 0 0.5rem;
   font-size: 1.5rem; }
@@ -275,7 +278,7 @@ ul.social__list--footer {
 .section__title {
   margin: 0 0 100px 0;
   font-weight: lighter;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   border-bottom: 1px solid var(--clr-dark); }
 
 .hero {
@@ -288,18 +291,18 @@ ul.social__list--footer {
   place-items: center; }
 
 .hero__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0; }
 
 .hero__designation {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: lighter; }
 
 .hero__info {
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
   color: var(--clr-dark); }
 
