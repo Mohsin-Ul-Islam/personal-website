@@ -1,0 +1,69 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes float-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in forwards;
+}
+
+.fade-out {
+  animation: fade-out 1s ease-out forwards;
+}
+
+.float-right {
+  animation: float-right 1s ease-in-out forwards;
+}
+
+.float-left {
+  animation: float-left 1s ease-in-out forwards;
+}
+
+.beat {
+  animation: beat 1s ease infinite;
+}

@@ -1,27 +1,44 @@
 extends components/layout
 
 block content
-  section.hero.container
-    article.hero__content
-      h1.hero__title Mohsin Ul Islam
-      strong.hero__designation Computer Scientist
-      p.hero__info='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      a(href="#").btn.btn--ghost Projects
-      a(href="#").btn.btn--primary Resume
-    figure.hero__figure
-      img(src='/images/hero_image.jpg').hero__image
+  section.hero
+    div.hero__wrapper.container
+      article.hero__content.float-right
+        h1.hero__title Hello, I'm Mohsin.
+        p.hero__designation Computer Scientist
+        p.hero__info I am a computer science student at Lahore University of Management Sciences with current academic standing of Senior. I love solving complex problems using modern computer technology with elegance. I also love playing football and gymnastics. I read lots of quality books because that fills my soul and mind with content.
+        a(href="#projects").btn.btn--ghost Projects
+        a(href="#").btn.btn--primary Download Resume
+        ul.social__list
+          li.social__list-item
+            a(href='https://github.com/Mohsin-Ul-Islam' target='_blank').social__link
+              i.social__icon.fab.fa-github
+          li.social__list-item
+            a(href='https://www.linkedin.com/in/mohsin-ul-islam-979a92188/' target='_blank').social__link
+              i.social__icon.fab.fa-linkedin
+          li.social__list-item
+            a(href='#' target='_blank').social__link
+              i.social__icon.fab.fa-twitter
+          li.social__list-item
+            a(href='#' target='_blank').social__link
+              i.social__icon.fab.fa-discord
+          li.social__list-item
+            a(href='#' target='_blank').social__link
+              i.social__icon.fab.fa-facebook-f
+      //figure.hero__figure
+        img(src='/images/hero_image.jpg', alt='Photo of Mohsin Ul Islam').hero__image
   
-  section.projects
-    div.projects__wrapper.container
-      article.projects__content
-        h2.projects__title My Projects
+  section.section#projects
+    div.section__wrapper.container
+      article.section__content
+        h2.section__title Projects
         div.cards
           div.card
             div.card__content
               h3.card__title Hikerr Website
               datetime.card__date July, 2020
               figcaption.card__info
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                p Hikerr is a travel agency currently operating in Pakistan. The project contains complete website for Hikerr including the administration portal. The website supports bookings of travel, online payment, sign in and sign up services.
               a(href='https://hikerr.co').btn.btn--ghost Visit Project
               
           div.card
@@ -29,7 +46,9 @@ block content
               h3.card__title Conway's game of life
               datetime.card__date June, 2020
               figcaption.card__info
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                p This project is a browser based simulation of Conway's game of life. You can read more about it 
+                  a(href='#') here
+                  span . The simulation is capable of providing step as well as time (in milliseconds) based game evolution. It also supports pause and play.
               a(href='https://mohsin-ul-islam.github.io/').btn.btn--ghost Visit Project
           
           
@@ -38,7 +57,7 @@ block content
               h3.card__title LSCSE Website
               datetime.card__date August, 2019
               figcaption.card__info
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                p LUMS Society of Chemical Sciences and Engineering is one of the prestigious student societies that has made to International News within first year of its existance. The project is a simple website for the mentioned society. This site is updated annually.
               a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
               
               
@@ -74,3 +93,97 @@ block content
               figcaption.card__info
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
               a(href='https://lscse.lums.edu.pk').btn.btn--ghost Visit Project
+  
+  section.section#education
+    div.section__wrapper.container
+      article.section__content
+        h2.section__title Education
+        //div.experience__header
+          h2.experience__title Experience
+          p.experience__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          a(href='').btn.btn--ghost Linkedin
+          a(href='').btn.btn--primary Download Resume
+        div.experience__cards
+          div.experience__card
+            div.card__content
+              p.experience__date August 2003 - April 2011
+              h3.experience__designation Working Folks Grammar School
+              p.experience__company General Sciences, Literature
+
+          div.experience__card
+            div.card__content
+              p.experience__date April 2011 - June 2017
+              h3.experience__designation Karnal Sher Khan Cadet College Swabi
+              p.experience__company Pre Engineering
+          div.experience__card
+            div.card__content
+              p.experience__date August 2017 - Present
+              h3.experience__designation Lahore University of Management Sciences
+              p.experience__company BS Computer Science
+
+  section.section#experience
+    div.section__wrapper.container
+      article.section__content
+        h2.section__title Experience
+        //div.experience__header
+          h2.experience__title Experience
+          p.experience__info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          a(href='').btn.btn--ghost Linkedin
+          a(href='').btn.btn--primary Download Resume
+        div.experience__cards
+          div.experience__card
+            div.card__content
+              p.experience__date July 2020 - Present
+              h3.experience__designation Software Engineering Internship
+              p.experience__company Laam.pk
+          div.experience__card
+            div.card__content
+              p.experience__date July 2020 - Present
+              h3.experience__designation Fullstack Web Developer
+              p.experience__company LSCSE
+          div.experience__card
+            div.card__content
+              p.experience__date July 2020 - Present
+              h3.experience__designation Frontend Developer
+              p.experience__company Spades
+  
+  section.section#testimonials
+    div.section__wrapper.container
+      article.section__content
+        h2.section__title Testimonials
+        div.cards
+          div.card
+            div.card__content
+              i.fa.fa-quote-left.testimonials__quote
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              div.testimonials__bottom
+                figure.testimonials__figure
+                  img(src='').testimonials__image
+                div.testimonials__details
+                  p.testimonials__author Muhammad Azhan
+                  p.testimonials__designation LSCSE, Ex President
+                  
+          div.card
+            div.card__content
+              i.fa.fa-quote-left.testimonials__quote
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              div.testimonials__bottom
+                figure.testimonials__figure
+                  img(src='').testimonials__image
+                div.testimonials__details
+                  p.testimonials__author Muhammad Mueez
+                  p.testimonials__designation Hikerr, CEO
+                  
+          div.card
+            div.card__content
+              i.fa.fa-quote-left.testimonials__quote
+              figcaption.card__info
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              div.testimonials__bottom
+                figure.testimonials__figure
+                  img(src='').testimonials__image
+                div.testimonials__details
+                  p.testimonials__author Muhammad Usama
+                  p.testimonials__designation Digari, CEO

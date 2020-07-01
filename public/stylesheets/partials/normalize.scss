@@ -4,15 +4,23 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   font-size: 16px;
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: var(--ff-primary);
+}
+
+.preload {
+  display: none;
 }
 
 ul {

@@ -1,25 +1,5 @@
-.projects {
-  background-color: var(--clr-white);
-  color: var(--clr-dark);
-  min-height: 100vh;
-  height: 100%;
-}
-
-.projects__wrapper {
-  padding: 120px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projects__title {
-  margin: 0 0 100px 0;
-  font-weight: bold;
-  font-size: 3.5rem;
-  border-bottom: 1px solid var(--clr-dark);
-}
-
 .cards {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
@@ -43,14 +23,15 @@
 
 .card__title {
   margin: 0;
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .card__info {
   display: inline-block;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: var(--clr-dark);
 }
 
 .card__date {

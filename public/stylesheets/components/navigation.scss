@@ -1,24 +1,34 @@
 .nav {
+  position: relative;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   border-bottom: 1px solid #ddd;
 }
 
 .nav__list {
-  padding: 0 1.5rem 0 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+.nav__logo {
+  flex-grow: 1;
+}
+
+.nav__logo > a {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 .nav__list-item {
-  padding: 1rem 1.8rem;
+  padding: 0 1rem;
 }
 
 .nav__link {
+  padding: 0.6rem 0;
   font-size: 1rem;
   color: var(--clr-dark);
   text-transform: uppercase;
@@ -27,6 +37,7 @@
 
 .nav__link--active {
   font-weight: bold;
+  border-bottom: 2px solid var(--clr-dark);
 }
 
 .nav__link--active ~ .nav__link-item {

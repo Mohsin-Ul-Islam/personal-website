@@ -1,0 +1,31 @@
+.testimonials__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__figure {
+  margin: 0 1rem 0 0;
+}
+
+.testimonials__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonials__author, .testimonials__designation {
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonials__author {
+  font-size: 1.1rem;
+}
+
+.testimonials__quote {
+  font-size: 2rem;
+}
+
+.testimonials__designation {
+  color: var(--clr-dark);
+}

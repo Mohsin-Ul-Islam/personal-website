@@ -3,6 +3,7 @@
 :root {
   --clr-white: #fafafa;
   --clr-dark: #555;
+  --ff-primary: 'Merriweather';
 }
 
 .container {
@@ -31,6 +32,9 @@
 @import "components/navigation";
 @import "components/footer";
 @import "components/gadets";
+@import "components/buttons";
+@import "sections/common";
 @import "sections/hero";
 @import "sections/projects";
-@import "components/buttons";
+@import "sections/testimonials";
+@import "sections/experience";

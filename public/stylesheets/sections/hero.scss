@@ -1,18 +1,25 @@
 .hero {
   height: calc(100vh - 80px);
+
+}
+
+.hero__wrapper {
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(300px,1fr) 1fr;
   place-items: center;
 }
 
 .hero__title {
-  font-size: 4rem;
-  font-weight: lighter;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin: 0;
 }
 
 .hero__designation {
-  color: orange;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: lighter;
 }
 
 .hero__info {
@@ -23,14 +30,33 @@
 }
 
 .hero__figure {
-  padding: 1rem;
+
   background-color: var(--clr-white);
-  box-shadow: 2px 3px 24px 18px rgba(0,0,0,0.1);
-  transform: rotate(23deg) scale(0.9);
+  box-shadow: 2px 3px 32px 18px rgba(0,0,0,0.2);
   transition: transform 0.4s ease-in-out;
-  cursor: pointer;
 }
 
-.hero__figure:hover {
-  transform: rotate(0);
+.hero__image {
+  display: block;
+}
+
+.social__list {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social__list-item {
+  margin-right: 1rem;
+}
+
+.social__link {
+  font-size: 2rem;
+  color: var(--clr-dark);
+  transition: color 0.4s ease-in-out;
+}
+
+.social__link:hover {
+  color: orange;
 }
