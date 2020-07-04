@@ -25,8 +25,8 @@ block content
           li.social__list-item
             a(href='https://web.facebook.com/syedmohsin.islam' target='_blank').social__link
               i.social__icon.fab.fa-facebook-f
-      //figure.hero__figure
-        img(src='/images/hero_image.jpg', alt='Photo of Mohsin Ul Islam').hero__image
+      figure.hero__figure
+        img(src='/images/hero.svg').hero__image
   
   section.section#projects
     div.section__wrapper.container
@@ -59,7 +59,24 @@ block content
               figcaption.card__info
                 p LUMS Society of Chemical Sciences and Engineering is one of the prestigious student societies that has made to International News within first year of its existance. The project is a simple website for the mentioned society. This site is updated annually.
               a(href='https://lscse.lums.edu.pk' target='_blank').btn.btn--ghost Visit Project
+     
+          div.card
+            div.card__content
+              h3.card__title Dxball
+              datetime.card__date Febraury, 2019
+              figcaption.card__info
+                p Dxball is a remake of classic dxball game. The game consist of different kinds of bricks to be broken by player using a metal ball and a platform to avoid the ball falling down. This game is made in C++ using SFML.
+              a(href='https://github.com/Mohsin-Ul-Islam/dxball' target='_blank').btn.btn--ghost Source Code
               
+          div.card
+            div.card__content
+              h3.card__title Chess
+              datetime.card__date July, 2020
+              figcaption.card__info
+                p This project is a chess game made in C++ using SFML. The project is not only a chess game but a good example of best design patterns and their practices. Work for computer player using artificial intelligence is in process. 
+              a(href='https://github.com/Mohsin-Ul-Islam/chess' target='_blank').btn.btn--ghost Source Code
+              
+
 
   section.section#education
     div.section__wrapper.container
@@ -120,4 +137,16 @@ block content
                 div.testimonials__details
                   p.testimonials__author Muhammad Azhan
                   p.testimonials__designation LSCSE, Founder &amp; Ex President
+                  
+          div.card
+            div.card__content
+              i.fa.fa-quote-left.testimonials__quote
+              figcaption.card__info
+                p I met Mohsin-ul-Islam and requested him to spare some time to design the LSCSE website. He was extremely helpful in guiding me through the whole process. He did everything that I asked in a very professional and timely manner. I am delighted with his performance and would recommend him and his company.
+              div.testimonials__bottom
+                figure.testimonials__figure
+                  img(src='/images/sam.jpg').testimonials__image
+                div.testimonials__details
+                  p.testimonials__author Muhammad Sameer
+                  p.testimonials__designation Esports @ LUMS, President
                   
