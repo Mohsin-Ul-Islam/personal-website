@@ -25,7 +25,7 @@
   border-right: 1px solid var(--clr-white);
 }
 
-.footer__link, {
+.footer__link {
   color: #aaa;
 }
 
@@ -48,6 +48,11 @@ ul.social__list--footer {
   padding: 0;
   grid-column: 2;
   grid-row: 2;
+}
+
+.social__list--footer .social__list-item {
+  opacity: 1;
+  z-index: 1;
 }
 
 .social__list--footer .social__link {

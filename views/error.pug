@@ -1,6 +1,7 @@
 extends components/layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  section.error
+    h1.error__heading Error# 404
+    p.error__details Oops! Looks like you are lost...
+    a(href='/').btn.btn--ghost Get on track

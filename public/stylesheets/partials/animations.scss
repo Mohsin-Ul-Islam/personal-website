@@ -16,11 +16,35 @@
   }
 }
 
+@keyframes float-up {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-down {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes float-left {
   from {
+    opacity: 0;
     transform: translateX(100%);
   }
   to {
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -33,6 +57,18 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes float-still-y {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
@@ -62,6 +98,18 @@
 
 .float-left {
   animation: float-left 1s ease-in-out forwards;
+}
+
+.float-up {
+  animation: float-up 0.7s ease-in-out forwards;
+}
+
+.float-down {
+  animation: float-down 1s ease-in-out forwards;
+}
+
+.float-still-y {
+  animation: float-still-y 1s ease infinite;
 }
 
 .beat {

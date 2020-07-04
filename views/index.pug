@@ -3,30 +3,32 @@ extends components/layout
 block content
   section.hero
     div.hero__wrapper.container
-      article.hero__content.float-right
-        h1.hero__title Hello, I'm Mohsin.
-        p.hero__designation Computer Scientist
-        p.hero__info I am a computer science student at Lahore University of Management Sciences with current academic standing of Senior. I love solving complex problems using modern computer technology with elegance. I also love playing football and gymnastics. I read lots of quality books because that fills my soul and mind with content.
-        a(href="#projects").btn.btn--ghost Projects
-        a(href="/downloads/resume").btn.btn--primary Download Resume
+      article.hero__content
+        h1.hero__title.float-right Hello, I'm Mohsin.
+        p.hero__designation.float-right Computer Scientist
+        p.hero__info.float-right I am a computer science student at Lahore University of Management Sciences with current academic standing of Senior. I love solving complex problems using modern computer technology with elegance. I also love playing football and gymnastics. I read lots of quality books because that fills my soul and mind with content.
+        a(href="#projects").btn.btn--ghost.float-up Projects
+        a(href="/downloads/resume").btn.btn--primary.float-up Download Resume
         ul.social__list
-          li.social__list-item
+          li.social__list-item.float-up
             a(href='https://github.com/Mohsin-Ul-Islam' target='_blank').social__link
               i.social__icon.fab.fa-github
-          li.social__list-item
+          li.social__list-item.float-up
             a(href='https://www.linkedin.com/in/mohsin-ul-islam-979a92188/' target='_blank').social__link
               i.social__icon.fab.fa-linkedin
-          li.social__list-item
+          li.social__list-item.float-up
             a(href='https://twitter.com/mohsin_ninja' target='_blank').social__link
               i.social__icon.fab.fa-twitter
-          li.social__list-item
+          li.social__list-item.float-up
             a(href='#' target='_blank').social__link
               i.social__icon.fab.fa-discord
-          li.social__list-item
+          li.social__list-item.float-up
             a(href='https://web.facebook.com/syedmohsin.islam' target='_blank').social__link
               i.social__icon.fab.fa-facebook-f
-      figure.hero__figure
+      figure.hero__figure.float-left
         img(src='/images/hero.svg').hero__image
+      a(href='#projects').nav--guide.float-still-y
+        div.arrow.arrow--down
   
   section.section#projects
     div.section__wrapper.container
@@ -150,3 +152,14 @@ block content
                   p.testimonials__author Muhammad Sameer
                   p.testimonials__designation Esports @ LUMS, President
                   
+          div.card
+            div.card__content
+              i.fa.fa-quote-left.testimonials__quote
+              figcaption.card__info
+                p I met Mohsin-ul-Islam and requested him to spare some time to design the LSCSE website. He was extremely helpful in guiding me through the whole process. He did everything that I asked in a very professional and timely manner. I am delighted with his performance and would recommend him and his company.
+              div.testimonials__bottom
+                figure.testimonials__figure
+                  img(src='/images/usama.jpg').testimonials__image
+                div.testimonials__details
+                  p.testimonials__author Muhammad Usama
+                  p.testimonials__designation Hikerr, Founder

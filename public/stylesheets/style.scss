@@ -2,7 +2,7 @@
 
 :root {
   --clr-white: #fafafa;
-  --clr-dark: #555;
+  --clr-dark: #3f3d56;
   --ff-primary: 'Merriweather';
 }
 
@@ -38,3 +38,4 @@
 @import "sections/projects";
 @import "sections/testimonials";
 @import "sections/experience";
+@import "sections/error.scss";
